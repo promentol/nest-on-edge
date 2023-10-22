@@ -1,0 +1,7 @@
+*.tsbuildinfo
+.swc/
+.turbo
+.wragnler
+node_modules
+dist
+.wragnler

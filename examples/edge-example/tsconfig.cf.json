@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "module": "es2022",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "ES2021",
+    "moduleResolution": "node",
+    "types": ["@cloudflare/workers-types"],
+    "resolveJsonModule": true,
+
+		"allowJs": true /* Allow JavaScript files to be a part of your program. Use the `checkJS` option to get errors from these files. */,
+		"checkJs": false /* Enable error reporting in type-checked JavaScript files. */,
+		"noEmit": true /* Disable emitting files from a compilation. */,
+
+		"isolatedModules": true /* Ensure that each file can be safely transpiled without relying on other imports. */,
+
+		"strict": false /* Enable all strict type-checking options. */,
+		"lib": ["es2021"],
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
+    "skipLibCheck": true,
+    "strictNullChecks": false,
+    "noImplicitAny": false,
+    "strictBindCallApply": false,
+    "forceConsistentCasingInFileNames": false,
+    "noFallthroughCasesInSwitch": false
+  }
+}

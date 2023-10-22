@@ -1,0 +1,35 @@
+{
+  "name": "nest-on-edge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev --parallel",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "devDependencies": {
+    "@commitlint/cli": "17.8.0",
+    "@commitlint/config-angular": "17.8.0",
+    "@nestjs/common": "10.2.7",
+    "@nestjs/core": "10.2.7",
+    "@nestjs/schematics": "10.0.2",
+    "@schematics/angular": "16.2.6",
+    "@types/node": "18.18.6",
+    "@typescript-eslint/eslint-plugin": "6.8.0",
+    "@typescript-eslint/parser": "6.8.0",
+    "chai": "^4.3.10",
+    "eslint": "8.51.0",
+    "eslint-config-prettier": "9.0.0",
+    "eslint-plugin-import": "2.28.1",
+    "husky": "8.0.3",
+    "lint-staged": "15.0.1",
+    "prettier": "3.0.3",
+    "release-it": "16.2.1",
+    "typescript": "5.2.2"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

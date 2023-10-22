@@ -1,0 +1,82 @@
+{
+  "name": "@noe/platform-hono",
+  "version": "0.0.1",
+  "description": "Hono HTTP adapter for Nest.js",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build:lib": "npm run build:lib && npm run build:schematics",
+    "build": "tsc -p tsconfig.json",
+    "build:schematics": "tsc -p tsconfig.schematics.json",
+    "lint": "eslint --ext ts --fix lib",
+    "format": "prettier --write \"lib/**/*.ts\"",
+    "precommit": "lint-staged",
+    "prepublish:npm": "npm run build",
+    "publish:npm": "npm publish --access public",
+    "prepublish:next": "npm run build",
+    "publish:next": "npm publish --access public --tag next",
+    "prerelease": "npm run build",
+    "release": "release-it",
+    "test:dev": "NODE_ENV=test npm run -s test -- --watchAll"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/seidelmartin/nest-koa-adapter"
+  },
+  "keywords": [
+    "nestjs",
+    "koa",
+    "koa-router"
+  ],
+  "author": "Martin Seidel",
+  "license": "MIT",
+  "dependencies": {
+    "@hono/node-server": "^1.2.0",
+    "hono": "^3.8.1",
+    "koa": "2.14.1",
+    "koa-bodyparser": "4.3.0",
+    "koa-router": "12.0.0"
+  },
+  "peerDependencies": {
+    "@nestjs/common": "^10.0.0",
+    "@nestjs/core": "^10.0.0"
+  },
+  "optionalDependencies": {
+    "@koa/cors": "4.0.0",
+    "koa-static": "5.0.0",
+    "koa-views": "8.0.0"
+  },
+  "devDependencies": {
+    "@koa/cors": "4.0.0",
+    "@nestjs/common": "^10.0.0",
+    "@nestjs/core": "^10.0.0",
+    "@nestjs/testing": "9.3.9",
+    "@types/koa": "2.13.5",
+    "@types/koa-bodyparser": "4.3.10",
+    "@types/koa-router": "7.4.4",
+    "@types/koa-static": "4.0.2",
+    "@types/koa-views": "2.0.4",
+    "@types/koa__cors": "3.3.1",
+    "@types/mocha": "10.0.1",
+    "@types/supertest": "2.0.12",
+    "@typescript-eslint/eslint-plugin": "5.53.0",
+    "@typescript-eslint/parser": "5.53.0",
+    "eslint": "8.34.0",
+    "eslint-config-prettier": "8.6.0",
+    "eslint-plugin-mocha": "10.1.0",
+    "eslint-plugin-prettier": "4.2.1",
+    "koa-static": "5.0.0",
+    "koa-views": "8.0.0",
+    "lodash.template": "4.5.0",
+    "mocha": "10.2.0",
+    "np": "7.6.3",
+    "prettier": "2.8.4",
+    "reflect-metadata": "0.1.13",
+    "rxjs": "7.8.0",
+    "supertest": "6.3.3",
+    "ts-node": "10.9.1",
+    "typescript": "4.9.5"
+  }
+}
