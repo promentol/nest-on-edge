@@ -12,8 +12,7 @@ Nest-on-Edge is set of libraries to run the popular Nest.js framework for edge e
 
 ## Philosophy
 
-<p>In recent years, thanks to Node.js, JavaScript has become the “lingua franca” of the web for both front and backend applications, giving rise to awesome projects like <a href="https://angular.io/" target="_blank">Angular</a>, <a href="https://github.com/facebook/react" target="_blank">React</a> and <a href="https://github.com/vuejs/vue" target="_blank">Vue</a> which improve developer productivity and enable the construction of fast, testable, extensible frontend applications. However, on the server-side, while there are a lot of superb libraries, helpers and tools for Node, none of them effectively solve the main problem - the architecture.</p>
-<p>Nest aims to provide an application architecture out of the box which allows for effortless creation of highly testable, scalable, loosely coupled and easily maintainable applications. The architecture is heavily inspired by Angular.</p>
+Nest on Edge is intended to bring Nest.js development to Cloudflare workers for new apps. Unfortunately, due limitations of Edge runtimes, it's not possible to build drop in replacement for all Nest.js packages like microservices, socket.io and etc. on Cloudflare workers. Instead we have ported `nest/common` and `nest/core` packages with node.js polyfills, created new `platform-hono` package, and planning to create additional modules, which will be very similiar to original nest.js packages. The main focus is Cloudflare workers, for other platforms Pull Requests are welcomed! 
 
 ## Getting started
 
