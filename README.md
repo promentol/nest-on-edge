@@ -1,16 +1,14 @@
 <p align="center">
-  <a href="https://nest-on-edge.pages.dev/" target="blank"><img src="https://nest-on-edge.pages.dev/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
+  <a href="https://nest-on-edge.pages.dev/" target="blank"><img src="https://nest-on-edge.pages.dev/assets/logo-small.svg" width="120" alt="Nest Logo" /></a>
 </p>
 
-#[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-#[circleci-url]: https://circleci.com/gh/nestjs/nest
 
 
 ## Description
 
-Nest is a framework for building efficient, scalable <a href="https://nodejs.org" target="_blank">Node.js</a> server-side applications. It uses modern JavaScript, is built with <a href="https://www.typescriptlang.org" target="_blank">TypeScript</a> (preserves compatibility with pure JavaScript) and combines elements of OOP (Object Oriented Programming), FP (Functional Programming), and FRP (Functional Reactive Programming).
+Nest-on-Edge is set of libraries to run the popular Nest.js framework for edge environments like Cloudflare Workers
 
-<p>Under the hood, Nest makes use of <a href="https://expressjs.com/" target="_blank">Express</a>, but also, provides compatibility with a wide range of other libraries, like e.g. <a href="https://github.com/fastify/fastify" target="_blank">Fastify</a>, allowing for easy use of the myriad third-party plugins which are available.</p>
+<p>Under the hood, Nest on Edge makes use of <a href="https://hono.dev/" target="_blank">Hone</a>, allowing for easy use of the myriad third-party plugins which are available.</p>
 
 ## Philosophy
 
@@ -19,10 +17,7 @@ Nest is a framework for building efficient, scalable <a href="https://nodejs.org
 
 ## Getting started
 
-- To check out the [guide](https://docs.nestjs.com), visit [docs.nestjs.com](https://docs.nestjs.com). :books:
-- 要查看中文 [指南](readme_zh.md), 请访问 [docs.nestjs.cn](https://docs.nestjs.cn). :books:
-- [가이드](readme_kr.md) 문서는 [docs.nestjs.com](https://docs.nestjs.com)에서 확인하실 수 있습니다. :books:
-- [ガイド](readme_jp.md)は [docs.nestjs.com](https://docs.nestjs.com)でご確認ください。 :books:
+- To check out the [guide](https://nest-on-edge.pages.dev), visit [nest-on-edge.pages.dev](https://nest-on-edge.pages.dev). :books:
 
 ## Questions
 
@@ -32,90 +27,15 @@ For questions and support please use the official [Discord channel](https://disc
 
 Please make sure to read the [Issue Reporting Checklist](https://github.com/nestjs/nest/blob/master/CONTRIBUTING.md#-submitting-an-issue) before opening an issue. Issues not conforming to the guidelines may be closed immediately.
 
-## Consulting
-
-With official support, you can get expert help straight from Nest core team. We provide dedicated technical support, migration strategies, advice on best practices (and design decisions), PR reviews, and team augmentation. Read more about [support here](https://enterprise.nestjs.com).
-
 ## Support
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support from the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-#### Principal Sponsors
-
-<table style="text-align:center;"><tr>
-  <td><a href="https://trilon.io" target="_blank"><img src="https://nestjs.com/img/trilon.svg" width="200" valign="middle" /></a></td>
-    <td>
-<a href="https://valor-software.com/" target="_blank"><img src="https://docs.nestjs.com/assets/sponsors/valor-software.png" width="170" valign="middle" /></a></td>
-<td>
-<a href="https://amplication.com/" target="_blank"><img src="https://nestjs.com/img/amplication-logo.svg" width="190" valign="middle" /></a></td>
-</tr></table>
-
-#### Gold Sponsors
-
-<table style="text-align:center;"><tr>
-  <td><a href="https://www.redhat.com" target="_blank"><img src="https://nestjs.com/img/red-hat-logo.svg" width="200" valign="middle" /></a></td>
-<td>
-<a href="https://github.com/Sanofi-IADC" target="_blank"><img src="https://docs.nestjs.com/assets/sponsors/sanofi.png" width="180" valign="middle" /></a></td>
-<td>
-<a href="https://nx.dev" target="_blank"><img src="https://nestjs.com/img/nx-logo.png" height="45" valign="middle" /></a></td>
-  <td>
-<a href="https://weld.app/" target="_blank"><img src="https://nestjs.com/img/weld-logo.svg" width="140" valign="middle" /></a></td>
-<td>
-<a href="https://intrinsic.ventures/" target="_blank"><img src="https://nestjs.com/img/intrinisic-logo.png" width="210" valign="middle" /></a></td></tr><tr>
- <td>
-<a href="https://jetbrains.com/" target="_blank"><img src="https://nestjs.com/img/jetbrains-logo.svg" width="90" valign="middle" /></a></td><td>
-<a href="https://snyk.co/nestjs" target="_blank"><img src="https://nestjs.com/img/snyk-logo-black.png" width="185" valign="middle" /></a></td><td>
-<a href="https://fuseautotech.com/" target="_blank"><img src="https://nestjs.com/img/fuse-logo.svg" width="105" valign="middle" /></a></td>
-<td>
-<a href="https://ridicorp.com/career/" target="_blank"><img src="https://nestjs.com/img/ridi-logo.svg" width="105" valign="middle" /></a></td><td>
-<a href="https://www.movavi.com/imovie-for-windows.html" target="_blank"><img src="https://nestjs.com/img/movavi-logo.svg" width="105" valign="middle" /></a></td></</tr></table>
-
-#### Silver Sponsors
-
-<table style="text-align:center;"><tr>
-<td><a href="https://n.inc" target="_blank"><img src="https://nestjs.com/img/n-inc-logo.svg" width="120" valign="middle" /></td>
-<td><a href="https://twistag.com/" target="_blank"><img src="https://nestjs.com/img/twistag-logo.png" width="120" valign="middle" /></td>
-<td><a href="https://immediateedgeapp.org/" target="_blank"><img src="https://nestjs.com/img/immediate-edge-logo.png" width="120" valign="middle" /></td>
-</tr>
-</table>
-
-#### Sponsors
-
-<table><tr><td align="center" valign="middle">
-<a href="https://www.swingdev.io" target="_blank"><img src="https://nestjs.com/img/swingdev-logo.svg#1" width="110" valign="middle" /> </a></td><td align="center" valign="middle">
-<a href="https://www.novologic.com/" target="_blank"><img src="https://nestjs.com/img/novologic.png" width="110" valign="middle" /></a> </td><td align="center" valign="middle">
-  <a href="https://mantro.net/" target="_blank"><img src="https://nestjs.com/img/mantro-logo.svg" width="95" valign="middle" /></a> </td><td align="center" valign="middle">
-  <a href="https://triplebyte.com/" target="_blank"><img src="https://nestjs.com/img/triplebyte.png" width="107" valign="middle" /></a> </td><td align="center" valign="middle">
-<a href="https://nearpod.com/" target="_blank"><img src="https://nestjs.com/img/nearpod-logo.svg" width="100" valign="middle" /></a> </td>
-  <td align="center" valign="middle">
-  <a href="https://genuinebee.com/" target="_blank"><img src="https://nestjs.com/img/genuinebee.svg" width="97" valign="middle" /></a> </td></tr><tr>
-<td align="center" valign="middle"><a href="https://sanyodigital.com/" target="_blank"><img src="https://nestjs.com/img/sanyo-digital.png" width="130" valign="middle" /></a></td><td align="center" valign="middle"><a href="https://vpn-review.com/vpn-for-torrenting" target="_blank"><img src="https://nestjs.com/img/vpn-review-logo.png" width="85" valign="middle" /></a></td><td align="center" valign="middle"><a href="https://lambda-it.ch/" target="_blank"><img src="https://nestjs.com/img/lambda-it-logo.svg" width="115" valign="middle" /></a></td>
-  <td align="center" valign="middle"><a href="https://www.najlepszeplatformyforex.pl/blog/broker-xtb/" target="_blank"><img src="https://nestjs.com/img/npf-logo.jpg" width="200" valign="middle" /></a></td>
-<td align="center" valign="middle"><a href="https://rocketech.it/cases/?utm_source=google&utm_medium=badge&utm_campaign=nestjs" target="_blank"><img src="https://nestjs.com/img/rocketech-logo.svg" width="110" valign="middle" /></a></td>
-  <td align="center" valign="middle"><a href="https://www.anonymistic.com/" target="_blank"><img src="https://nestjs.com/img/anonymistic-logo.png" width="125" valign="middle" /></a></td></tr><tr>
-<td align="center" valign="middle"><a href="https://www.naologic.com/" target="_blank"><img src="https://nestjs.com/img/naologic-logo.svg" width="125" valign="middle" /></a></td>
-  <td align="center" valign="middle"><a href="https://triplecore.io" target="_blank"><img src="https://nestjs.com/img/triplecore-logo.svg" width="50" valign="middle" /></a></td>
-   <td align="center" valign="middle"><a href="https://thecasinowizard.com/bonuses/no-deposit-bonuses/" target="_blank"><img src="https://nestjs.com/img/casinowizard-logo.png" width="120" valign="middle" /></a></td>
-     <td align="center" valign="middle"><a href="https://polygon-software.ch/" target="_blank"><img src="https://nestjs.com/img/polygon-logo.svg" width="120" valign="middle" /></a></td>
-     <td align="center" valign="middle"><a href="https://boringowl.io/" target="_blank"><img src="https://nestjs.com/img/boringowl-logo.svg" width="120" valign="middle" /></a></td>
- <td align="center" valign="middle"><a href="https://nordbot.app/" target="_blank"><img src="https://nestjs.com/img/nordbot-logo.png" width="120" valign="middle" /></a></td></tr><tr>
- <td align="center" valign="middle"><a href="https://doppio.sh/" target="_blank"><img src="https://nestjs.com/img/dopiosh-logo.png" width="50" valign="middle" /></a></td>
-   <td align="center" valign="middle"><a href="https://www.hingehealth.com/" target="_blank"><img src="https://nestjs.com/img/hinge-health-logo.svg" width="100" valign="middle" /></a></td>
-   <td align="center" valign="middle"><a href="https://julienferand.dev/" target="_blank"><img src="https://nestjs.com/img/julienferand-logo.jpeg" width="65" valign="middle" /></a></td>
-   <td align="center" valign="middle"><a href="https://www.tripoffice.com/" target="_blank"><img src="https://nestjs.com/img/tripoffice-logo.png" width="140" valign="middle" /></a></td>
-   <td align="center" valign="middle"><a href="https://solcellsforetag.se/" target="_blank"><img src="https://nestjs.com/img/solcellsforetag-logo.svg" width="140" valign="middle" /></a></td>
-  </tr></table>
-
-## Backers
-
-<a href="https://opencollective.com/nest" target="_blank"><img src="https://opencollective.com/nest/backers.svg?width=1000"></a>
+Nest on Edge is an MIT-licensed open source project. It can grow thanks to the sponsors and support from the amazing backers. If you'd like to join them, please [read more here](https://nest-on-edge.pages.dev/support).
 
 ## Stay in touch
 
-- Author - [Kamil Myśliwiec](https://x.com/kammysliwiec)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- X - [@nestframework](https://x.com/nestframework)
+- Author - [Narek Hovsepyan](https://github.com/promentol)
+- Website - [[https://nest.js](https://nestjs.com/)](https://nest-on-edge.pages.dev/)
 
 ## License
 
-Nest is [MIT licensed](LICENSE).
+Nest on Edge is [MIT licensed](LICENSE).
