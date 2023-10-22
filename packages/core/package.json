@@ -1,0 +1,34 @@
+{
+  "name": "@noe/core",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:lib": "npm run build:lib && npm run build:schematics",
+    "build": "tsc -p tsconfig.json",
+    "build:schematics": "tsc -p tsconfig.schematics.json",
+    "lint": "eslint --ext ts --fix lib",
+    "format": "prettier --write \"lib/**/*.ts\"",
+    "precommit": "lint-staged",
+    "prepublish:npm": "npm run build",
+    "publish:npm": "npm publish --access public",
+    "prepublish:next": "npm run build",
+    "publish:next": "npm publish --access public --tag next",
+    "prerelease": "npm run build",
+    "release": "release-it",
+    "test:dev": "NODE_ENV=test npm run -s test -- --watchAll"
+  },
+  "peerDependencies": {
+    "@noe/platform-hono": "^0.0.1",
+    "@nestjs/common": "^10.0.0",
+    "@nestjs/core": "^10.0.0"
+  },
+  "devDependencies": {
+    "@noe/platform-hono": "*",
+    "@nestjs/common": "^10.0.0",
+    "@nestjs/core": "^10.0.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
